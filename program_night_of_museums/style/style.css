@@ -3,13 +3,13 @@ body{
 	font-family: Georgia, serif;
 	font-size: 12px;
 	background-color:#FDF5E6;
-	/*background-image: url(); изображение фона, для вставки эмблемм, логотипов и очего*/
+	background-image: url("../img/backgroung_night.jpg");
 	background-size: 180px;
 	background-position: bottom 20px right 20px;
 	background-repeat: no-repeat;
 	color: #252525;
 }
-/*Разметка заголовка программы*/
+
 .main_header h1{
 	text-align: center;
 	font-size: 35px;
@@ -18,7 +18,7 @@ body{
 	margin-bottom: 10px;
 }
 
-.main_header_dif{
+.main_header_h2{
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
@@ -26,14 +26,14 @@ body{
 	margin-bottom: 10px;
 }
 
-.main_header_explon{
+.main_header_strong{
 	display: block;
 	font-size: 18px;
 	font-weight: bold;
 	margin-left: 20px;
 	margin-bottom: 10px;
 }
-/*Стили навигационного меню программы*/
+
 .main_header nav ul{
 	margin: 20px;
 }
@@ -53,7 +53,7 @@ body{
 	text-decoration: underline;
 	color: #F4A460;
 }
-/*Стили для этапов программы*/
+
 .program{
 	position: relative;
 	margin-left: 20px;
@@ -81,7 +81,7 @@ body{
 .programm_image:active{
 	width: 400px;
 }
-/*Стили для секций описания программы*/
+
 .text_section_head, .multi_section_head{
 	font-size: 24px;
 	font-weight: bold;
@@ -102,7 +102,6 @@ body{
 	font-weight: bold;
 }
 
-/*Стили для изображений внутри секции описания*/
 .multi_section_image{
 	margin-left: 20px;
 	margin-right: 20px;
@@ -115,7 +114,7 @@ body{
 .multi_section_image:active{
 	width: 400px;
 }
-/*Стили блока стоимости*/
+
 .cost{
 	margin: 20px;
 }
@@ -126,7 +125,6 @@ body{
 	margin-bottom: 5px;
 }
 
-/*Стили блока контактов и футера*/
 .footer_contacts_head{
 	margin-left: 20px;
 	font-size: 19px;
