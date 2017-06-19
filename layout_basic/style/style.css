@@ -5,16 +5,12 @@ body{
 	background-color:#FDF5E6;
 	background-image: url("../img/backgroung_night.jpg");
 	background-size: 180px;
-	background-position: 95% 98%;
+	background-position: bottom 20px right 20px;
 	background-repeat: no-repeat;
 	color: #252525;
 }
 
-header{
-	display: flex;
-}
-
-header h1{
+.main_header h1{
 	text-align: center;
 	font-size: 35px;
 	font-weight: bold;
@@ -22,7 +18,7 @@ header h1{
 	margin-bottom: 10px;
 }
 
-header h2{
+.main_header_h2{
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
@@ -30,7 +26,7 @@ header h2{
 	margin-bottom: 10px;
 }
 
-header strong{
+.main_header_strong{
 	display: block;
 	font-size: 18px;
 	font-weight: bold;
@@ -38,56 +34,55 @@ header strong{
 	margin-bottom: 10px;
 }
 
-header nav{
+.main_header nav ul{
 	margin: 20px;
 }
 
-header nav a{
+.main_header  nav a{
 	text-decoration: none;
 	color: #252525;
 	font-weight: bold;
 }
 
-header nav a:hover{
+.main_header  nav a:hover{
 	text-decoration: underline;
 	color: #708090;
 }
 
-header nav a:active{
+.main_header  nav a:active{
 	text-decoration: underline;
 	color: #F4A460;
 }
 
-aside img{
-	margin-left: 20px;
-	margin-top: 20px;
-	width: 200px;
-	border: 4px solid #F4A460;
-	border-radius: 15%;
-}
-
-aside img:active{
-	width: 400px;	
-}
-
-aside .program{
+.program{
+	position: relative;
 	margin-left: 20px;
 }
 
-aside .program h3{
+.program_header{
 	font-size: 19px;
 	font-weight: bold;
 	margin-bottom: 5px;
 }
 
-aside .program p{
+.program_text{
 	font-weight: bold;
 }
 
-section{
+.programm_image{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: 200px;
+	border: 4px solid #F4A460;
+	border-radius: 15%;
 }
 
-section h2{
+.programm_image:active{
+	width: 400px;
+}
+
+.text_section_head, .multi_section_head{
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
@@ -95,14 +90,19 @@ section h2{
 	margin-bottom: 10px;
 }
 
-section p, section strong{
+.section_content, .section_explon{
 	margin-left: 20px;
 	margin-right: 20px;
 	word-wrap: break-word;
 	text-align: justify;
 }
 
-section img{
+.section_explon{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.multi_section_image{
 	margin-left: 20px;
 	margin-right: 20px;
 	width: 200px;
@@ -111,7 +111,7 @@ section img{
 	float: left;
 }
 
-section img:active{
+.multi_section_image:active{
 	width: 400px;
 }
 
@@ -119,16 +119,16 @@ section img:active{
 	margin: 20px;
 }
 
-.cost h3{
+.cost_head{
 	font-size: 19px;
 	font-weight: bold;
 	margin-bottom: 5px;
 }
 
-footer h3{
+.footer_contacts_head{
 	margin-left: 20px;
 	font-size: 19px;
-	font-weight: bold;	
+	font-weight: bold;
 }
 
 footer address {
@@ -137,10 +137,10 @@ footer address {
 	margin-bottom: 20px;
 }
 
-footer address a{
+.contact_list a{
 	text-decoration: none;
 	color: #252525;
-	font-weight: bold;	
+	font-weight: bold;
 }
 
 footer address a:hover{
