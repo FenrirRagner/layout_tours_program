@@ -73,10 +73,18 @@ body{
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
-	width: 200px;
+	height: 100px;
 	border: 4px solid #F4A460;
 	border-radius: 15%;
 }
+
+/* .exp_img_1{
+	bottom: 200px;
+}
+
+.exp_img_2{
+	bottom: 400px;
+} Дополнительные изображения, при необходимости добавить свойство bottom классу .exp_img_3...etc с увеличением первое +174px, второе и далее + 154*/ 
 
 .programm_image:active{
 	width: 400px;
@@ -118,6 +126,7 @@ body{
 /*Стили блока стоимости*/
 .cost{
 	margin: 20px;
+	margin-top: 35px;
 }
 
 .cost_head{
