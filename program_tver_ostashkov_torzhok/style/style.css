@@ -65,8 +65,12 @@ body{
 	margin-bottom: 5px;
 }
 
-.program_text{
+.program_text, .program_list_day{
 	font-weight: bold;
+}
+
+.program_list_day ul li{
+	font-weight: normal;
 }
 
 .programm_image{
