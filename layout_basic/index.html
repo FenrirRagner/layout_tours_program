@@ -2,8 +2,8 @@
 <html lang="ru">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-		<link rel="stylesheet" href="style/style.css">
 		<link rel="stylesheet" href="style/reset_default_style.css">
+		<link rel="stylesheet" href="style/style.css">
 		<title></title><!-- Название программы -->
 	</head>
 	<body>
@@ -21,17 +21,52 @@
 						</ul>
 					</nav>
 				</header>
-				<aside class="program">
-						<h3 class="program_header" id="schedule">График программы:</h3>
-						<p class="program_text"></p><!--даты-->
-						<ul class="program_list">
-							<li></li><!--время и действие-->
-							<li></li><!--время и действие-->
-							<li></li><!--время и действие-->
-						</ul>
-					<img class="programm_image" src="" alt=""> <!-- Заглавное изображение программы -->
-					<!--<img class="programm_image exp_img_1" src="img/" alt="">  Дополнительное изображение программы
-					<img class="programm_image exp_img_2" src="img/" alt=""> Дополнительное изображение программы. При необходимости добавить изображение с классом programm_image exp_img_n -->
+				<aside class="program clearfix">
+				<div class="program-data">
+					<h3 class="program_header" id="schedule">График программы:</h3>
+					<p class="program_text"></p><!--даты-->
+					<ul class="program_list">
+						<li class="program_list_day"><!-- Первый день: -->
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							</li><!--время и действие-->
+						<li class="program_list_day"><!-- Второй день: -->
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</li><!--время и действие-->
+						<li class="program_list_day"><!-- Третий день: -->
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</li><!--время и действие-->
+					</ul>
+					</div>
+					<div class="program-image">
+					<img class="program_image" src="img/" alt=""> <!--  Заглавное изображение программы -->
+					 <!-- Дополнительные изображение программы
+					 <img class="program_image exp_img_1" src="img/" alt="">
+					<img class="program_image exp_img_2" src="img/" alt="">-->
+					</div>
 				</aside>
 				<section class="text_section"><!-- Секция для текстового описания части прогаммы -->
 					<h2 class="text_section_head"></h2><!-- Название места -->
@@ -41,7 +76,6 @@
 				<section class="multi_section"><!-- Секция для описания части программы с изображением слева -->
 					<h2 class="multi_section_head"></h2><!-- Название места -->
 					<img class="multi_section_image" src="" alt=""><!-- Поясняющее изображение к части программы -->
-					<strong class="section_explon"></strong><!-- Дополнительный заголовок //необязателен -->
 					<p class="section_content"></p><!-- Описание части прогаммы -->
 				</section>
 				<aside class="cost">
