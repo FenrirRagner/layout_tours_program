@@ -1,0 +1,188 @@
+/* Style for main element */
+body{
+	font-family: Georgia, serif;
+	font-size: 13px;
+	background-color:#FDF5E6;
+	/*background-image: url(); изображение фона, для вставки эмблемм, логотипов и очего*/
+	background-size: 180px;
+	background-position: bottom 20px right 20px;
+	background-repeat: no-repeat;
+	color: #252525;
+}
+
+li{
+	list-style: none;
+}
+
+/*Разметка заголовка программы*/
+.main_header h1{
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.main_header_dif{
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.main_header_explon{
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+/*Стили навигационного меню программы*/
+.main_header nav ul{
+	margin: 20px;
+}
+
+.main_header  nav a{
+	text-decoration: none;
+	color: #252525;
+	font-weight: bold;
+}
+
+.main_header  nav a:hover{
+	text-decoration: underline;
+	color: #708090;
+}
+
+.main_header  nav a:active{
+	text-decoration: underline;
+	color: #F4A460;
+}
+/*Стили для этапов программы*/
+.program{
+	margin-left: 20px;
+}
+
+.program_header{
+	font-size: 19px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.program_text, .program_list_day{
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.program_list_day ul li{
+	font-weight: normal;
+	line-height: 14px;
+	text-indent: 10px;
+}
+
+.programm_image{
+/* 	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	height: 100px; */
+	height: 100px;
+	display: block;
+	float: right;
+	margin-left: 40%;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	border: 4px solid #F4A460;
+	border-radius: 15%;
+	transition-property: height;
+	transition-duration: .15s;
+}
+
+.exp_img_1{
+	bottom: 174px;
+}
+
+.exp_img_2{
+	bottom: 328px;
+}
+
+.programm_image:active{
+	height: 150px;
+}
+/*Стили для секций описания программы*/
+.text_section_head, .multi_section_head{
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.section_content, .section_explon{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	word-wrap: break-word;
+	text-align: justify;
+}
+
+.section_explon{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+/*Стили для изображений внутри секции описания*/
+.multi_section_image{
+	margin: 15px;
+	width: 200px;
+	border: 4px solid #F4A460;
+	border-radius: 15%;
+	float: left;
+	transition-property: width;
+	transition-duration: .15s;
+}
+
+.multi_section_image:active{
+	width: 300px;
+}
+/*Стили блока стоимости*/
+.cost{
+	margin: 20px;
+	margin-top: 105px;
+}
+
+.cost_head{
+	font-size: 19px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+/*Стили блока контактов и футера*/
+.footer_contacts_head{
+	margin-left: 20px;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+footer address {
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.contact_list a{
+	text-decoration: none;
+	color: #252525;
+	font-weight: bold;
+}
+
+footer address a:hover{
+	text-decoration: underline;
+	color: #708090;
+}
+
+footer address a:active{
+	text-decoration: underline;
+	color: #F4A460;
+}
