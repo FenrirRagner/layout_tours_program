@@ -137,13 +137,13 @@ main{
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 60px;
 	margin-bottom: 10px;
 }
 
 .section_content, .section_explon{
 	margin-right: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	word-wrap: break-word;
 	text-align: justify;
 }
@@ -176,7 +176,7 @@ main{
 /*Стили блока стоимости*/
 .cost{
 	margin-bottom: 20px;
-	margin-top: 65px;
+	margin-top: 105px;
 }
 
 .cost_head{
