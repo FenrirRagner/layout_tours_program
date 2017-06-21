@@ -14,6 +14,11 @@ li{
 	list-style: none;
 }
 
+main{
+	margin: 0 auto;
+ 	width: 70%;
+}
+
 /*Разметка заголовка программы*/
 .main_header h1{
 	text-align: center;
@@ -35,12 +40,17 @@ li{
 	display: block;
 	font-size: 18px;
 	font-weight: bold;
-	margin-left: 20px;
 	margin-bottom: 10px;
 }
 /*Стили навигационного меню программы*/
-.main_header nav ul{
-	margin: 20px;
+
+.main_header nav{
+	text-align: center;
+}
+
+.main_header nav li{
+	margin: 10px;
+	display: inline-block;
 }
 
 .main_header  nav a{
@@ -60,7 +70,6 @@ li{
 }
 /*Стили для этапов программы*/
 .program{
-	margin-left: 20px;
 	margin-right: 20px;
 }
 
@@ -70,9 +79,8 @@ li{
 	margin-bottom: 5px;
 }
 
-.program-data{
+.program_data{
 	float: left;
-	width: 80%;
 }
 
 .program_text, .program_list_day{
@@ -82,19 +90,28 @@ li{
 
 .program_list_day ul li{
 	font-weight: normal;
-	line-height: 14px;
-	text-indent: 10px;
+	line-height: 16px;
+	text-align: justify;
+	margin-left: 10px;
+	word-wrap: break-word;
+}
+
+.program_image_block{
+	margin-top: 25px;
+	width: 150px;
+	float: right;
 }
 
 .program_image{
+	cursor: pointer;
 	display: block;
 	height: 100px;
-	float: right;
 	margin-bottom: 20px;
-	border: 4px solid #F4A460;
+	border: 5px solid #F4A460;
 	border-radius: 15%;
-	transition-property: height;
-	transition-duration: .15s;
+	transition-property: height, transform;
+	transition-duration: 150ms;
+	transition-timing-function: ease-in-out;
 }
 
 .clearfix::after {
@@ -113,6 +130,7 @@ li{
 
 .program_image:active{
 	height: 150px;
+	transform: translateX(-70px);
 }
 /*Стили для секций описания программы*/
 .text_section_head, .multi_section_head{
@@ -124,7 +142,6 @@ li{
 }
 
 .section_content, .section_explon{
-	margin-left: 20px;
 	margin-right: 20px;
 	margin-bottom: 20px;
 	word-wrap: break-word;
@@ -132,48 +149,50 @@ li{
 }
 
 .section_explon{
-	display: inline-block;
+	display: block;
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 25px;
+	text-align: center;
 }
 
 /*Стили для изображений внутри секции описания*/
 .multi_section_image{
-	margin: 15px;
+	margin-right: 20px;
+	margin-top: 5px;
 	width: 200px;
-	border: 4px solid #F4A460;
+	border: 5px solid #F4A460;
 	border-radius: 15%;
 	float: left;
-	transition-property: width;
+	transition-property: width, position;
 	transition-duration: .15s;
+	cursor: pointer;
 }
 
 .multi_section_image:active{
 	width: 300px;
+	position: relative;
 }
 /*Стили блока стоимости*/
 .cost{
-	margin: 20px;
-	margin-top: 105px;
+	margin-bottom: 20px;
+	margin-top: 65px;
 }
 
 .cost_head{
-	font-size: 19px;
+	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 5px;
 }
 
 /*Стили блока контактов и футера*/
 .footer_contacts_head{
-	margin-left: 20px;
-	font-size: 19px;
+	font-size: 20px;
 	font-weight: bold;
 }
 
 footer address {
 	margin-top: 5px;
-	margin-left: 20px;
 	margin-bottom: 20px;
 }
 
