@@ -1,17 +1,14 @@
-/* Style for main element */
+/* Styles for main elements */
 body{
 	font-family: Georgia, serif;
 	font-size: 13px;
 	background-color:#FDF5E6;
-	/*background-image: url(); изображение фона, для вставки эмблемм, логотипов и очего*/
+	/*background image for logo and etc.
+	background-image: url(); 
 	background-size: 180px;
 	background-position: bottom 20px right 20px;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 	color: #252525;
-}
-
-li{
-	list-style: none;
 }
 
 main{
@@ -19,7 +16,7 @@ main{
  	width: 70%;
 }
 
-/*Разметка заголовка программы*/
+/*Styles header article*/
 .main_header h1{
 	text-align: center;
 	font-size: 35px;
@@ -28,7 +25,7 @@ main{
 	margin-bottom: 10px;
 }
 
-.main_header_dif{
+.main_header_subtitle{
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
@@ -42,7 +39,7 @@ main{
 	font-weight: bold;
 	margin-bottom: 10px;
 }
-/*Стили навигационного меню программы*/
+/* Styles for navigation menu */
 
 .main_header nav{
 	text-align: center;
@@ -68,50 +65,9 @@ main{
 	text-decoration: underline;
 	color: #F4A460;
 }
-/*Стили для этапов программы*/
-.program{
+/* Styles for aside block with timetable */
+.timetable{
 	margin-right: 20px;
-}
-
-.program_header{
-	font-size: 19px;
-	font-weight: bold;
-	margin-bottom: 5px;
-}
-
-.program_data{
-	float: left;
-}
-
-.program_text, .program_list_day{
-	font-weight: bold;
-	line-height: 20px;
-}
-
-.program_list_day ul li{
-	font-weight: normal;
-	line-height: 16px;
-	text-align: justify;
-	margin-left: 10px;
-	word-wrap: break-word;
-}
-
-.program_image_block{
-	margin-top: 25px;
-	width: 150px;
-	float: right;
-}
-
-.program_image{
-	cursor: pointer;
-	display: block;
-	height: 100px;
-	margin-bottom: 20px;
-	border: 5px solid #F4A460;
-	border-radius: 15%;
-	transition-property: height, transform;
-	transition-duration: 150ms;
-	transition-timing-function: ease-in-out;
 }
 
 .clearfix::after {
@@ -120,20 +76,62 @@ main{
     clear: both;
 }
 
-.exp_img_1{
+.timetable_header{
+	font-size: 19px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.timetable_data_block{
+	float: left;
+}
+
+.timetable_text, .timetable_list_day{
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.timetable_list_day ul li{
+	font-weight: normal;
+	line-height: 16px;
+	text-align: justify;
+	margin-left: 10px;
+	word-wrap: break-word;
+}
+
+.timetable_image_block{
+	margin-top: 25px;
+	width: 150px;
+	float: right;
+}
+
+.timetable_image{
+	border: 5px solid #F4A460;
+	border-radius: 15%;
+	cursor: pointer;
+	display: block;
+	height: 100px;
+	margin-bottom: 20px;
+	transition-property: height, transform;
+	transition-duration: 150ms;
+	transition-timing-function: ease-in-out;
+}
+
+.timetable_exp_img_1{
 	bottom: 174px;
 }
 
-.exp_img_2{
+.timetable_exp_img_2{
 	bottom: 328px;
 }
 
-.program_image:active{
+.timetable_image:active{
 	height: 150px;
 	transform: translateX(-70px);
 }
-/*Стили для секций описания программы*/
-.text_section_head, .multi_section_head{
+
+/*  Styles for sections with main content */
+.text_section_headline, .multi_section_headline{
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
@@ -141,14 +139,14 @@ main{
 	margin-bottom: 10px;
 }
 
-.section_content, .section_explon{
+.section_text_content, .section_subtitle{
 	margin-right: 20px;
 	margin-bottom: 5px;
 	word-wrap: break-word;
 	text-align: justify;
 }
 
-.section_explon{
+.section_subtitle{
 	display: block;
 	font-size: 16px;
 	font-weight: bold;
@@ -156,37 +154,54 @@ main{
 	text-align: center;
 }
 
-/*Стили для изображений внутри секции описания*/
+/* Styles for image inside content */
 .multi_section_image{
-	margin-right: 20px;
 	margin-top: 5px;
 	width: 200px;
 	border: 5px solid #F4A460;
 	border-radius: 15%;
-	float: left;
 	transition-property: width, position;
 	transition-duration: .15s;
 	cursor: pointer;
 }
 
-.multi_section_image:active{
+.multi_section .image_left {
+	float: left;
+	margin-right: 20px;
+}
+
+.multi_section .image_right {
+	float: right;
+	margin-left: 20px;
+}
+
+.multi_section .image_left:active, .multi_section .image_right:active{
 	width: 300px;
 	position: relative;
 }
-/*Стили блока стоимости*/
+/*Style for "cost" block*/
 .cost{
 	margin-bottom: 20px;
 	margin-top: 105px;
 }
 
-.cost_head{
+.cost_headline{
 	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 5px;
 }
 
-/*Стили блока контактов и футера*/
-.footer_contacts_head{
+.cost_text {
+	margin-left: 10px;
+}
+
+/* Styles for footer and contact blocks*/
+
+/* Hidden footer/// footer{
+	display: none;
+} */
+
+.footer_headline{
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -196,18 +211,24 @@ footer address {
 	margin-bottom: 20px;
 }
 
-.contact_list a{
-	text-decoration: none;
+.contact_list, .contact_list a{
 	color: #252525;
 	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 10px;
+	text-decoration: none;
 }
 
-footer address a:hover{
+.contact_fullname{
+	margin-left: 10px;
+}
+
+.contact_list a:hover{
 	text-decoration: underline;
 	color: #708090;
 }
 
-footer address a:active{
+.contact_list a:active{
 	text-decoration: underline;
 	color: #F4A460;
 }
