@@ -1,0 +1,234 @@
+/* Styles for main elements */
+body{
+	font-family: Georgia, serif;
+	font-size: 13px;
+	background-color:#FDF5E6;
+	/*background image for logo and etc.
+	background-image: url();
+	background-size: 180px;
+	background-position: bottom 20px right 20px;
+	background-repeat: no-repeat;*/
+	color: #252525;
+}
+
+main{
+	margin: 0 auto;
+ 	width: 70%;
+}
+
+/*Styles header article*/
+.main_header h1{
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.main_header_subtitle{
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.main_header_explon{
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+/* Styles for navigation menu */
+
+.main_header nav{
+	text-align: center;
+}
+
+.main_header nav li{
+	margin: 10px;
+	display: inline-block;
+}
+
+.main_header  nav a{
+	text-decoration: none;
+	color: #252525;
+	font-weight: bold;
+}
+
+.main_header  nav a:hover{
+	text-decoration: underline;
+	color: #708090;
+}
+
+.main_header  nav a:active{
+	text-decoration: underline;
+	color: #F4A460;
+}
+/* Styles for aside block with timetable */
+.timetable{
+	margin-right: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.timetable_header{
+	font-size: 19px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.timetable_data_block{
+	float: left;
+}
+
+.timetable_text, .timetable_list_day{
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.timetable_list_day ul li{
+	font-weight: normal;
+	line-height: 16px;
+	text-align: justify;
+	margin-left: 10px;
+	word-wrap: break-word;
+}
+
+.timetable_image_block{
+	margin-top: 25px;
+	width: 150px;
+	float: right;
+}
+
+.timetable_image{
+	border: 5px solid #F4A460;
+	border-radius: 15%;
+	cursor: pointer;
+	display: block;
+	height: 100px;
+	margin-bottom: 20px;
+	transition-property: height, transform;
+	transition-duration: 150ms;
+	transition-timing-function: ease-in-out;
+}
+
+.timetable_exp_img_1{
+	bottom: 174px;
+}
+
+.timetable_exp_img_2{
+	bottom: 328px;
+}
+
+.timetable_image:active{
+	height: 150px;
+	transform: translateX(-70px);
+}
+
+/*  Styles for sections with main content */
+.text_section_headline, .multi_section_headline{
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 10px;
+}
+
+.section_text_content, .section_subtitle{
+	margin-right: 20px;
+	margin-bottom: 5px;
+	word-wrap: break-word;
+	text-align: justify;
+}
+
+.section_subtitle{
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 25px;
+	text-align: center;
+}
+
+/* Styles for image inside content */
+.multi_section_image{
+	margin-top: 5px;
+	width: 200px;
+	border: 5px solid #F4A460;
+	border-radius: 15%;
+	transition-property: width, position;
+	transition-duration: .15s;
+	cursor: pointer;
+}
+
+.multi_section .image_left {
+	float: left;
+	margin-right: 20px;
+}
+
+.multi_section .image_right {
+	float: right;
+	margin-left: 20px;
+}
+
+.multi_section .image_left:active, .multi_section .image_right:active{
+	width: 300px;
+	position: relative;
+}
+/*Style for "cost" block*/
+.cost{
+	margin-bottom: 20px;
+	margin-top: 25px;
+}
+
+.cost_headline{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.cost_text {
+	margin-left: 10px;
+}
+
+/* Styles for footer and contact blocks*/
+
+/* Hidden footer/// footer{
+	display: none;
+} */
+
+.footer_headline{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+footer address {
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.contact_list, .contact_list a{
+	color: #252525;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+.contact_fullname{
+	margin-left: 10px;
+}
+
+.contact_list a:hover{
+	text-decoration: underline;
+	color: #708090;
+}
+
+.contact_list a:active{
+	text-decoration: underline;
+	color: #F4A460;
+}
