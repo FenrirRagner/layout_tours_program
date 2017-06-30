@@ -9,83 +9,74 @@
 	<body>
 		<main>
 			<article>
-				<header class="main_header">
-					<h1>Tests</h1><!-- Название программы -->
-					<h2 class="main_header_subtitle"></h2><!--Места программы-->
-					<!-- <strong class="main_header_explon"></strong> Дополнительное описание программы -->
-					<nav>
-						<ul>
-							<li><a href="#timetable">Программа</a></li>
-							<li><a href="#cost">Стоимость</a></li>
-							<li><a href="#contacts">Контакты</a></li>
+				<header class="header">
+					<h1 class="header--title">Tests</h1><!-- Название программы -->
+					<h2 class="header--subtitle"></h2><!--Места программы или кроткое описание-->
+					<nav class="main-nav">
+						<ul class="main-nav--menu-list">
+							<li class="main-nav--menu-item"><a class="main-nav--menu-link" href="#timetable">Программа</a></li>
+							<li class="main-nav--menu-item"><a class="main-nav--menu-link" href="#cost">Стоимость</a></li>
+							<li class="main-nav--menu-item"><a class="main-nav--menu-link" href="#contacts">Контакты</a></li>
 						</ul>
 					</nav>
 				</header>
 				<aside class="timetable clearfix">
-				<div class="timetable_data_block">
-					<h3 class="timetable_header" id="timetable">График программы:</h3>
-					<p class="timetable_text">Tests</p><!--даты-->
-					<ul class="timetable_list">
-						<li class="timetable_list_day">Tests<!-- Первый день: -->
-							<ul><!--время и действие-->
-								<li>Tests</li>
-								<li>Tests</li>
-								<li>Tests</li>
-								<li>Tests</li>
-								<li>Tests</li>
-								<li>Tests</li>
-								<li>Tests</li>
+				<div class="timetable-data">
+					<h3 class="timetable-data--title" id="timetable">График программы:</h3>
+					<p class="timetable-data--text">Tests</p><!--даты-->
+					<ul class="timetable-data--menu-list">
+						<li class="timetable-data--menu-item">Tests<!-- Первый день: -->
+							<ul class="timetable-data--submenu-list"><!--время и действие-->
+								<li class="timetable-data--submenu-item">Tests</li>
+								<li class="timetable-data--submenu-item">Tests</li>
+								<li class="timetable-data--submenu-item">Tests</li>
+								<li class="timetable-data--submenu-item">Tests</li>
+								<li class="timetable-data--submenu-item">Tests</li>
+								<li class="timetable-data--submenu-item">Tests</li>
+								<li class="timetable-data--submenu-item">Tests</li>
 							</ul>
-							</li>
-						<!-- <li class="timetable_list_day"><!-- Второй день: --><!--
-							<ul><!--время и действие--><!--
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
-						</li> ///Дополнительные дни/// -->
+						</li>
 					</ul>
-					</div>
-					<div class="timetable_image_block">
-					<img class="timetable_image" src="img/" alt="Tests"> <!--  Заглавное изображение программы -->
-					 <!-- Дополнительные изображение программы
-					 <img class="timetable_image timetable_exp_img_1" src="img/" alt="">
-					<img class="timetable_image timetable_exp_img_2" src="img/" alt="">-->
+				</div>
+					<div class="timetable-images">
+						<img class="timetable-images--img0" src="img/" alt="Tests"> <!--  Заглавное изображение программы -->
+						<!-- Дополнительные изображение программы-->
+						<img class="timetable-images--img1" src="img/" alt="Tests">
+						<img class="timetable-images--img2" src="img/" alt="Tests">
 					</div>
 				</aside>
-				<section class="text_section"><!-- Секция для текстового описания части прогаммы -->
-					<h2 class="text_section_headline">Tests</h2><!-- Название места -->
-					<strong class="section_subtitle">Tests</strong><!-- Дополнительный заголовок //необязателен -->
-					<p class="section_text_content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><!-- Описание части прогаммы -->
+				<section class="text-section"><!-- Секция для текстового описания части прогаммы -->
+					<h2 class="text-section--title">Tests</h2><!-- Название места -->
+					<strong class="text-section--desc">Tests</strong><!-- Дополнительный заголовок //необязателен -->
+					<p class="text-section--content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><!-- Описание части прогаммы -->
 				</section>
-				<section class="multi_section"><!-- Секция для описания части программы с изображением слева -->
-					<h2 class="multi_section_headline">Test</h2><!-- Название места -->
-					<img class="multi_section_image image_left" src="" alt="Test_img"><!-- Поясняющее изображение к части программы -->
-					<p class="section_text_content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><!-- Описание части прогаммы -->
+				<section class="multi-section"><!-- Секция для описания части программы с изображением слева -->
+					<h2 class="multi-section--title">Test</h2><!-- Название места -->
+					<strong class="multi-section--desc">Tests</strong><!-- Дополнительный заголовок //необязателен -->
+					<img class="multi-section--image-left" src="" alt="Test_img"><!-- Поясняющее изображение к части программы -->
+					<p class="multi-section--content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><!-- Описание части прогаммы -->
 				</section>
-				<section class="multi_section"><!-- Секция для описания части программы с изображением слева -->
-					<h2 class="multi_section_headline">Test</h2><!-- Название места -->
-					<img class="multi_section_image image_right" src="" alt="Test_img"><!-- Поясняющее изображение к части программы -->
-					<p class="section_text_content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><!-- Описание части прогаммы -->
+				<section class="multi-section"><!-- Секция для описания части программы с изображением слева -->
+					<h2 class="multi-section--title">Test</h2><!-- Название места -->
+					<strong class="multi-section--desc">Tests</strong><!-- Дополнительный заголовок //необязателен -->
+					<img class="multi-section--image-right" src="" alt="Test_img"><!-- Поясняющее изображение к части программы -->
+					<p class="multi-section--content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><!-- Описание части прогаммы -->
 				</section>
 				<aside class="cost">
-					<h3 class="cost_headline" id="cost">Стоимость:</h3>
-					<p class="cost_text">value cost</p><!-- Параметры стоимости -->
+					<h3 class="cost--title" id="cost">Стоимость:</h3>
+					<p class="cost--text">value cost</p><!-- Параметры стоимости -->
 				</aside>
 			</article>
-			<footer><!-- Блок контактов -->
-				<h3 class="footer_headline" id="contacts">Контакты:</h3>
-				<address>
-					<p class="contact_fullname">Туристическая фирма ООО «НОВЫЙ СВЕТ»<br />
+			<footer class="footer"><!-- Блок контактов -->
+				<h3 class="footer--title" id="contacts">Контакты:</h3>
+				<address class="footer-addres">
+					<p class="footer-addres--text">Туристическая фирма ООО «НОВЫЙ СВЕТ»<br />
 						170005  г. Тверь, ул. Мусоргского  д. 12  офис  218</p>
-					<ul class="contact_list">
-						<li>Сайт: <a href="http://www.newsvet-tur.ru">www.newsvet-tur.ru</a></li>
-						<li>E-mail: <a href="mailto:noviysvet@gmail.com">noviysvet@gmail.com</a><br /></li>
-						<li>Тел: <a href="tel:4822526450">8 (4822) 52-64-50</a><br /></li>
-						<li>Факс: <a href="fax:4822501909">8 (4822) 50-19-09</a><br /></li>
+					<ul class="footer-addres--list">
+						<li class="footer-addres--item">Сайт: <a class="footer-addres--link" href="http://www.newsvet-tur.ru">www.newsvet-tur.ru</a></li>
+						<li class="footer-addres--item">E-mail: <a class="footer-addres--link" href="mailto:noviysvet@gmail.com">noviysvet@gmail.com</a><br /></li>
+						<li class="footer-addres--item">Тел: <a class="footer-addres--link" href="tel:4822526450">8 (4822) 52-64-50</a><br /></li>
+						<li class="footer-addres--item">Факс: <a class="footer-addres--link" href="fax:4822501909">8 (4822) 50-19-09</a><br /></li>
 					</ul>
 				</address>
 				<p>

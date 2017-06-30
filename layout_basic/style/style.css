@@ -1,23 +1,23 @@
 /* Styles for main elements */
-body{
+body {
 	font-family: Georgia, serif;
 	font-size: 13px;
 	background-color:#FDF5E6;
 	/*background image for logo and etc.
-	background-image: url(); 
+	background-image: url();
 	background-size: 180px;
 	background-position: bottom 20px right 20px;
 	background-repeat: no-repeat;*/
 	color: #252525;
 }
 
-main{
+main {
 	margin: 0 auto;
  	width: 70%;
 }
 
-/*Styles header article*/
-.main_header h1{
+/*Styles for article header*/
+.header--title {
 	text-align: center;
 	font-size: 35px;
 	font-weight: bold;
@@ -25,7 +25,7 @@ main{
 	margin-bottom: 10px;
 }
 
-.main_header_subtitle{
+.header--subtitle {
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
@@ -33,40 +33,35 @@ main{
 	margin-bottom: 10px;
 }
 
-.main_header_explon{
-	display: block;
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
 /* Styles for navigation menu */
 
-.main_header nav{
+.main-nav {
 	text-align: center;
 }
 
-.main_header nav li{
+.main-nav--menu-item {
 	margin: 10px;
 	display: inline-block;
 }
 
-.main_header  nav a{
+.main-nav--menu-link {
 	text-decoration: none;
 	color: #252525;
 	font-weight: bold;
 }
 
-.main_header  nav a:hover{
+.main-nav--menu-link:hover {
 	text-decoration: underline;
 	color: #708090;
 }
 
-.main_header  nav a:active{
+.main-nav--menu-link:active {
 	text-decoration: underline;
 	color: #F4A460;
 }
-/* Styles for aside block with timetable */
-.timetable{
+/* Styles for aside timetable */
+/* Timetable texts */
+.timetable {
 	margin-right: 20px;
 }
 
@@ -76,22 +71,23 @@ main{
     clear: both;
 }
 
-.timetable_header{
+.timetable-data {
+	float: left;
+}
+
+.timetable-data--title {
 	font-size: 19px;
 	font-weight: bold;
 	margin-bottom: 5px;
 }
 
-.timetable_data_block{
-	float: left;
-}
-
-.timetable_text, .timetable_list_day{
+.timetable-data--text,
+.timetable-data--menu-item {
 	font-weight: bold;
 	line-height: 20px;
 }
 
-.timetable_list_day ul li{
+.timetable-data--submenu-item {
 	font-weight: normal;
 	line-height: 16px;
 	text-align: justify;
@@ -99,13 +95,16 @@ main{
 	word-wrap: break-word;
 }
 
-.timetable_image_block{
+/* Timetable images */
+.timetable-images {
 	margin-top: 25px;
 	width: 150px;
 	float: right;
 }
 
-.timetable_image{
+.timetable-images--img0,
+.timetable-images--img1,
+.timetable-images--img2 {
 	border: 5px solid #F4A460;
 	border-radius: 15%;
 	cursor: pointer;
@@ -117,21 +116,24 @@ main{
 	transition-timing-function: ease-in-out;
 }
 
-.timetable_exp_img_1{
+.timetable-images--img1 {
 	bottom: 174px;
 }
 
-.timetable_exp_img_2{
+.timetable-images--img2 {
 	bottom: 328px;
 }
 
-.timetable_image:active{
+.timetable-images--img0:active,
+.timetable-images--img1:active,
+.timetable-images--img2:active {
 	height: 150px;
 	transform: translateX(-70px);
 }
 
 /*  Styles for sections with main content */
-.text_section_headline, .multi_section_headline{
+.text-section--title,
+.multi-section--title {
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
@@ -139,14 +141,18 @@ main{
 	margin-bottom: 10px;
 }
 
-.section_text_content, .section_subtitle{
+.text-section--content,
+.multi-section--content,
+.text-section--desc,
+.multi-section--desc{
 	margin-right: 20px;
 	margin-bottom: 5px;
 	word-wrap: break-word;
-	text-align: justify;
+	text-align: left;
 }
 
-.section_subtitle{
+.text-section--desc,
+.multi-section--desc {
 	display: block;
 	font-size: 16px;
 	font-weight: bold;
@@ -155,7 +161,8 @@ main{
 }
 
 /* Styles for image inside content */
-.multi_section_image{
+.multi-section--image-left,
+.multi-section--image-right {
 	margin-top: 5px;
 	width: 200px;
 	border: 5px solid #F4A460;
@@ -165,53 +172,59 @@ main{
 	cursor: pointer;
 }
 
-.multi_section .image_left {
+.multi-section--image-left  {
 	float: left;
 	margin-right: 20px;
 }
 
-.multi_section .image_right {
+.multi-section--image-right  {
 	float: right;
 	margin-left: 20px;
 }
 
-.multi_section .image_left:active, .multi_section .image_right:active{
+.multi-section--image-left:active,
+.multi-section--image-right:active {
 	width: 300px;
 	position: relative;
 }
 /*Style for "cost" block*/
-.cost{
+.cost {
 	margin-bottom: 20px;
-	margin-top: 105px;
+	margin-top: auto;
 }
 
-.cost_headline{
+.cost--title {
 	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 5px;
 }
 
-.cost_text {
+.cost--text  {
 	margin-left: 10px;
 }
 
 /* Styles for footer and contact blocks*/
 
-/* Hidden footer/// footer{
+/* Hidden footer/// .footer {
 	display: none;
 } */
 
-.footer_headline{
+.footer--title {
 	font-size: 20px;
 	font-weight: bold;
 }
 
-footer address {
+.footer-addres  {
 	margin-top: 5px;
 	margin-bottom: 20px;
 }
 
-.contact_list, .contact_list a{
+.footer-addres--text {
+	margin-left: 10px;
+}
+
+.footer-addres--list,
+.footer-addres--link{
 	color: #252525;
 	font-weight: bold;
 	margin-top: 10px;
@@ -219,16 +232,12 @@ footer address {
 	text-decoration: none;
 }
 
-.contact_fullname{
-	margin-left: 10px;
-}
-
-.contact_list a:hover{
+.footer-addres--link:hover {
 	text-decoration: underline;
 	color: #708090;
 }
 
-.contact_list a:active{
+.footer-addres--link:active {
 	text-decoration: underline;
 	color: #F4A460;
 }
