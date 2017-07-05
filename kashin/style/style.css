@@ -1,0 +1,258 @@
+/* Styles for main elements */
+body {
+	font-family: Georgia, serif;
+	font-size: 13px;
+	background-color:#FDF5E6;
+	/*background image for logo and etc.
+	background-image: url();
+	background-size: 180px;
+	background-position: bottom 20px right 20px;
+	background-repeat: no-repeat;*/
+	color: #252525;
+}
+
+main {
+	margin: 0 auto;
+ 	width: 70%;
+}
+
+/*Styles for article header*/
+.header--title {
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.header--subtitle {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+/* Styles for navigation menu */
+
+.main-nav {
+	text-align: center;
+}
+
+.main-nav--menu-item {
+	margin: 10px;
+	display: inline-block;
+}
+
+.main-nav--menu-link {
+	text-decoration: none;
+	color: #252525;
+	font-weight: bold;
+}
+
+.main-nav--menu-link:hover {
+	text-decoration: underline;
+	color: #708090;
+}
+
+.main-nav--menu-link:active {
+	text-decoration: underline;
+	color: #F4A460;
+}
+/* Styles for aside timetable */
+/* Timetable texts */
+.timetable {
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.timetable-data {
+	float: left;
+	width: 55%;
+}
+
+.timetable-data--title {
+	font-size: 19px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.timetable-data--text{
+	display: none;
+}
+
+.timetable-data--text,
+.timetable-data--menu-item {
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.timetable-data--submenu-list{
+	list-style: disc;
+}
+
+.timetable-data--submenu-item {
+	font-weight: normal;
+	line-height: 16px;
+	text-align: left;
+
+	margin-left: 10px;
+	word-wrap: break-word;
+}
+
+/* Timetable images */
+.timetable-images {
+	margin-top: 25px;
+	width: 150px;
+	float: right;
+}
+
+.timetable-images--img0,
+.timetable-images--img1,
+.timetable-images--img2 {
+	border: 5px solid #F4A460;
+	border-radius: 15%;
+	cursor: pointer;
+	display: block;
+	height: 100px;
+	margin-bottom: 20px;
+	transition-property: height, transform;
+	transition-duration: 150ms;
+	transition-timing-function: ease-in-out;
+}
+
+.timetable-images--img1 {
+	bottom: 174px;
+}
+
+.timetable-images--img2 {
+	bottom: 328px;
+}
+
+.timetable-images--img0:active,
+.timetable-images--img1:active,
+.timetable-images--img2:active {
+	height: 150px;
+	transform: translateX(-70px);
+}
+
+/*  Styles for sections with main content */
+.text-section--title,
+.multi-section--title {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: 10px;
+}
+
+.text-section--content,
+.multi-section--content,
+.text-section--desc,
+.multi-section--desc{
+	margin-right: 20px;
+	margin-left: 230px;
+	margin-bottom: 5px;
+	word-wrap: break-word;
+	text-align: left;
+}
+
+.text-section--desc,
+.multi-section--desc {
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 25px;
+	text-align: center;
+}
+
+/* Styles for image inside content */
+
+.multi-section--block-images{
+	width: 220px;
+	float: left;
+}
+
+.multi-section--image-left,
+.multi-section--image-right {
+	margin-top: 5px;
+	width: 200px;
+	border: 5px solid #F4A460;
+	border-radius: 15%;
+	transition-property: width, position;
+	transition-duration: .15s;
+	cursor: pointer;
+}
+
+
+
+.multi-section--image-left  {
+	margin: 5px;
+}
+
+.multi-section--image-left:active,
+.multi-section--image-right:active {
+	width: 300px;
+	position: relative;
+}
+/*Style for "cost" block*/
+.cost {
+	margin-bottom: 20px;
+	margin-top: auto;
+	clear: both;
+}
+
+.cost--title {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.cost--text  {
+	margin-left: 10px;
+}
+
+/* Styles for footer and contact blocks*/
+
+.footer {
+	display: none;
+}
+
+.footer--title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.footer-addres  {
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.footer-addres--text {
+	margin-left: 10px;
+}
+
+.footer-addres--list,
+.footer-addres--link{
+	color: #252525;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+.footer-addres--link:hover {
+	text-decoration: underline;
+	color: #708090;
+}
+
+.footer-addres--link:active {
+	text-decoration: underline;
+	color: #F4A460;
+}
